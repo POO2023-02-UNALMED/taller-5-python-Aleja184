@@ -41,7 +41,7 @@ class Pez(Animal):
         Pez.salmones+=1
         return salmon
     
-    def crearAguila(nombre,edad,genero):
+    def crearBacalao(nombre,edad,genero):
         bacalao = Pez(nombre,edad,"oceano",genero,"gris",6)
         Pez.bacalaos+=1
         return bacalao

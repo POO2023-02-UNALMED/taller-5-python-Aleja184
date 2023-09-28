@@ -31,6 +31,6 @@ class Zoologico:
         else:
             self._zonas.append(zona)
     
-    def cantidadTotalAnimal():
-        Animal.getTotalAnimales
+    def cantidadTotalAnimales():
+        return Animal.getTotalAnimales()
         
