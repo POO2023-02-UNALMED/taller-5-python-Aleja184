@@ -10,16 +10,16 @@ class Mamifero(Animal):
         self._pelaje = pelaje
         self._patas = patas
 
-    def getColorPelaje(self):
+    def isPelaje(self):
         return self._pelaje
     
-    def setColorPelaje(self,pelaje):
+    def setPelaje(self,pelaje):
         self._pelaje = pelaje
     
-    def getColorPatas(self):
+    def getPatas(self):
         return self._patas
     
-    def setColorPatas(self,patas):
+    def setPatas(self,patas):
         self._patas = patas
 
     classmethod
