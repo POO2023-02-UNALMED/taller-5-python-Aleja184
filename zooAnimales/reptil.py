@@ -29,8 +29,8 @@ class Reptil(Animal):
         return cls._listado
 
     @staticmethod
-    def cantidadReptiles(cls):
-        return len(cls._listado)
+    def cantidadReptiles():
+        return len(Reptil._listado)
 
     def movimiento():
         return "reptar"

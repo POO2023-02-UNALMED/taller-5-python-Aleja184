@@ -30,6 +30,10 @@ class Zoologico:
         else:
             self._zonas.append(zona)
     
-    def cantidadTotalAnimales():
-        return Animal.getTotalAnimales()
+    def cantidadTotalAnimales(self):
+        c = 0
+        for zona in self._zonas:
+            c += zona.cantidadAnimales()
+
+        return c
         
