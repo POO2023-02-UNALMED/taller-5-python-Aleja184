@@ -41,13 +41,13 @@ class Animal:
     def setZona(self,zona):
         self._zona = zona
     
-    classmethod
+    @classmethod
     def getTotalAnimales(cls):
         return cls._totalAnimales
 
     def movimiento():
         return "desplazarse"
-    
+    @staticmethod
     def totalPorTipo():
         return "Mamiferos: "+str(zooAnimales.mamifero.Mamifero.cantidadMamiferos()) + "\nAves: "+str(zooAnimales.ave.Ave.cantidadAves())+"\nReptiles: "+str(zooAnimales.reptil.Reptil.cantidadReptiles())+"\nPeces: "+str(zooAnimales.pez.Pez.cantidadPeces())+"\nAnfibios: "+str(zooAnimales.anfibio.Anfibio.cantidadAnfibios())
     

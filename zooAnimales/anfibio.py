@@ -23,23 +23,23 @@ class Anfibio(Animal):
     def setVenenoso(self,venenoso):
         self._venenoso = venenoso
 
-    classmethod
+    @classmethod
     def getListado(cls):
         return cls._listado
 
-    classmethod
-    def cantidadAnfibios(cls):
-        return len(cls._listado)
+    @staticmethod
+    def cantidadAnfibios():
+        return len(Anfibio._listado)
 
     def movimiento():
         return "saltar"
-    
-    def crearRana(nombre,edad,genero):
+    @classmethod
+    def crearRana(cls,nombre,edad,genero):
         rana = Anfibio(nombre,edad,"selva",genero,"rojo",True)
-        Anfibio.ranas+=1
+        cls.ranas+=1
         return rana
-    
-    def crearSalamandra(nombre,edad,genero):
+    @classmethod
+    def crearSalamandra(cls,nombre,edad,genero):
         salamandra = Anfibio(nombre,edad,"selva",genero,"negro y amarillo",False)
-        Anfibio.salamandras+=1
+        cls.salamandras+=1
         return salamandra

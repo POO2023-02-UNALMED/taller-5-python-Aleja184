@@ -25,23 +25,23 @@ class Pez(Animal):
     def setCantidadAletas(self,cantidadAletas):
         self._cantidadAletas = cantidadAletas
 
-    classmethod
+    @classmethod
     def getListado(cls):
         return cls._listado
 
-    classmethod
-    def cantidadPeces(cls):
-        return len(cls._listado)
+    @staticmethod
+    def cantidadPeces():
+        return len(Pez._listado)
 
     def movimiento():
         return "nadar"
-    
-    def crearSalmon(nombre,edad,genero):
+    @classmethod
+    def crearSalmon(cls,nombre,edad,genero):
         salmon = Pez(nombre,edad,"oceano",genero,"rojo",6)
-        Pez.salmones+=1
+        cls.salmones+=1
         return salmon
-    
-    def crearBacalao(nombre,edad,genero):
+    @classmethod
+    def crearBacalao(cls,nombre,edad,genero):
         bacalao = Pez(nombre,edad,"oceano",genero,"gris",6)
-        Pez.bacalaos+=1
+        cls.bacalaos+=1
         return bacalao
